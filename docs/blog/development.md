@@ -17,7 +17,7 @@ pnpm dev
 pnpm new-post my-post
 ```
 
-编辑 `src/content/posts/` 中的 Markdown 文件。设置 `draft: false` 后文章会出现在正式构建中。模板示例已移到 `docs/examples/`，不会发布。
+编辑 `src/content/posts/` 中的 Markdown 文件。设置 `draft: false` 后文章会出现在正式构建中。模板示例已移到 `docs/upstream/examples/fuwari/`，不会发布。
 
 ## 个人资料
 
