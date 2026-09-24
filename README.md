@@ -1,6 +1,7 @@
 # Miike's Blog
 
 Miike's Blog 是一个用于记录学习、开发过程和日常思考的个人博客。项目基于 [Fuwari](https://github.com/saicaca/fuwari) 模板二次定制，使用 [Astro](https://astro.build/) 构建，并结合 Tailwind CSS、Svelte 组件、Pagefind 搜索、RSS 和站点地图生成。
+-示例url: [Miike_Blog](https://blog.miike.top/)
 
 ## 模板与技术栈
 
