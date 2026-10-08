@@ -33,3 +33,7 @@ yarn.lock
 .pnpm-store/
 .sites-runtime/
 .wiki/
+
+# local deployment files
+.deploy-ssh/
+*.tar.gz

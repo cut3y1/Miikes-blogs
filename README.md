@@ -35,10 +35,12 @@ Miike's Blog 是一个用于记录学习、开发过程和日常思考的个人�
 │  ├─ styles/                   # 全局样式和 Markdown 样式
 │  └─ config.ts                 # 站点名称、导航、头像、主题等配置
 ├─ public/                      # 静态公开资源
+├─ config/                      # Biome、Tailwind、PostCSS、Svelte、Pagefind 配置
 ├─ docs/blog/                   # 本项目维护文档
 ├─ docs/upstream/               # Fuwari 原模板文档与示例
 ├─ scripts/                     # 辅助脚本
-└─ package.json                 # 命令和依赖
+├─ package.json                 # 命令和依赖
+└─ astro.config.mjs             # Astro 主配置入口
 ```
 
 ## 本地开发

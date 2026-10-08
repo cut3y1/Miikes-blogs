@@ -15,6 +15,7 @@ import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-directives";
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
+import svelteConfig from "./config/svelte.config.js";
 import { expressiveCodeConfig } from "./src/config.ts";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
 import { AdmonitionComponent } from "./src/plugins/rehype-component-admonition.mjs";
@@ -31,6 +32,7 @@ export default defineConfig({
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
+			configFile: "./config/tailwind.config.cjs",
 			nesting: true,
 		}),
 		swup({
@@ -99,7 +101,7 @@ export default defineConfig({
 				showCopyToClipboardButton: false,
 			}
 		}),
-        svelte(),
+		svelte(svelteConfig),
 		sitemap(),
 	],
 	markdown: {
@@ -154,6 +156,9 @@ export default defineConfig({
 		],
 	},
 	vite: {
+		css: {
+			postcss: "./config",
+		},
 		build: {
 			rollupOptions: {
 				onwarn(warning, warn) {

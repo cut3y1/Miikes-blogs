@@ -6,13 +6,13 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "astro check",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && cd config && pagefind --site ../dist",
     "preview": "astro preview",
     "astro": "astro",
     "type-check": "tsc --noEmit --isolatedDeclarations",
     "new-post": "node scripts/new-post.js",
-    "format": "biome format --write ./src",
-    "lint": "biome check --write ./src",
+    "format": "biome format --config-path ./config/biome.json --write ./src",
+    "lint": "biome check --config-path ./config/biome.json --write ./src",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
